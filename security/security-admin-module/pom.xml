@@ -70,7 +70,7 @@
                             <goal>grunt</goal>
                         </goals>
                         <configuration>
-                            <arguments>build test</arguments>
+                            <arguments>build test --force</arguments>
                         </configuration>
                     </execution>
                 </executions>

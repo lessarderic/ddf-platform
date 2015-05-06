@@ -70,7 +70,7 @@
                             <goal>grunt</goal>
                         </goals>
                         <configuration>
-                            <arguments>build test -v -d</arguments>
+                            <arguments>build test -v -d --stack</arguments>
                         </configuration>
                     </execution>
                 </executions>

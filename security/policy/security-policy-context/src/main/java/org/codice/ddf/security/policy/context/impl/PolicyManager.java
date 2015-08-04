@@ -105,6 +105,12 @@ public class PolicyManager implements ContextPolicyManager {
     }
 
     public void setPolicies(Map<String, Object> properties) {
+
+        if (properties==null) {
+            LOGGER.debug("setPolicies called with null properties map");
+            return;
+        }
+
         LOGGER.debug("setPolicies called: {}", properties);
         policyStore.clear();
         policyStore.put("/", defaultPolicy);
